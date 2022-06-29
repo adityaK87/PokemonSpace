@@ -1,0 +1,14 @@
+body{
+    /* background-color: #dbf6e9; */
+    background-color: #262a2b;
+    color: #162447;
+}
+.app{
+    text-align: center;
+}
+
+h1{
+    color: #fff;
+    font-size:  50px;
+    font-family: "Press Start 2p" , cursive;
+}
