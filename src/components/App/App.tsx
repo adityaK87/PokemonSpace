@@ -10,25 +10,26 @@ interface AppState{
     allPokemons:PokemonSchema[] ;
     searchedPokemons:PokemonSchema[];
     selectedPokemon:PokemonSchema | undefined;
-}
- class App  extends  React.Component<any, AppState>  {
+};
+ class App  extends  React.Component<any, AppState> {
         state = {
             searchField:"",
             allPokemons:[],
             searchedPokemons:[],
             selectedPokemon:undefined,
-        };   
+     };   
 
 
-    patchPokemonData = (pokemons:UnPatchedPokemonSchema[])=>{
-        const patchedPokemons = pokemons.map((pokemon)=> {
+    patchPokemonData = (pokemons:UnPatchedPokemonSchema[]) => {
+        const patchedPokemons = pokemons.map((pokemon) => {
              let parsedSprites:PokemonSpritesSchema={
                 normal:undefined,
                 animated:undefined
              };
+
              try {
                 parsedSprites = pokemon.sprites && JSON.parse(pokemon.sprites)
-                
+                //this will check the above condition and the execute
              } catch (e) {
                 console.log("Exception while parsing the sprites: ", e)
              }
