@@ -90,7 +90,7 @@ handleClick = (pokemonName:string) => {
 render() {
     return (
          <div className="app">
-            <h1> Pokedex! </h1>
+            <h1> Pokemonline! </h1>
             <Pokedex 
              searchedPokemons={this.state.searchedPokemons}
              selectedPokemon={this.state.selectedPokemon}
