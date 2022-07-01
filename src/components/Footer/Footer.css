@@ -1,0 +1,24 @@
+
+
+.footer-container{
+    text-align: center;
+    }
+    
+    
+    .footer-container:hover{
+        background-color:rgb(160, 136, 93);
+       
+    }
+    .footer-container a{
+      text-decoration: none;
+    }
+    
+    .footer-link{
+     color: #eee2ee;
+     font-size: 25px;
+     
+    }
+    
+    .footer-link:hover{
+        color: black;
+    }
